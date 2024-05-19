@@ -1,3 +1,5 @@
+This is a fork for my own usage. Originally from git@github.com:h1dd3nsn1p3r/pdf-invoice.git
+
 ![PDF Invoice](https://github.com/h1dd3nsn1p3r/pdf-invoice/blob/development/examples/hero.png)
 
 📑 Simple yet powerful JavaScript library that generates PDF invoice, estimates & payment receipts from a JSON data. It can be used in any Node JS/Bun JS environment. 

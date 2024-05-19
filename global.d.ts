@@ -1,3 +1,5 @@
+import type { WriteStream } from "node:fs";
+
 export interface CompanyInfo {
 	logo?: string;
 	name?: string;
@@ -51,7 +53,7 @@ export interface InvoicePayLoad {
 }
 
 export interface SimplePDFInvoice {
-	create(): Promise<string>;
+	create(): Promise<{ path: string, stream: WriteStream }>;
 	fonts(): any;
 	meta(): any;
 	content(): any;

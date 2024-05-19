@@ -1,3 +1,5 @@
+import type { WriteStream } from "node:fs";
+
 const fs = require("fs");
 const path = require("path");
 const invoiceMaker = require("pdfmake");
@@ -65,7 +67,7 @@ export class PDFInvoice implements SimplePDFInvoice {
 	 * @returns {void}
 	 * @since 1.0.0
 	 */
-	async create(): Promise<string> {
+	async create(): Promise<{ path: string, stream: WriteStream }> {
 		const printer = new invoiceMaker(this.fonts());
 
 		const docDefinition = {

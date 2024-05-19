@@ -85,7 +85,10 @@ export class PDFInvoice implements SimplePDFInvoice {
 			doc.pipe(stream);
 
 			doc.on("end", () => {
-				resolve(this.path);
+				resolve({
+					path: this.path,
+					stream,
+				});
 			});
 
 			doc.on("error", (err: any) => {
@@ -93,7 +96,6 @@ export class PDFInvoice implements SimplePDFInvoice {
 			});
 
 			doc.end();
-			stream.close();
 		});
 	}
 

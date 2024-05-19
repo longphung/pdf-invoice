@@ -9,19 +9,19 @@ This is a fork for my own usage. Originally from git@github.com:h1dd3nsn1p3r/pdf
 via npm:
 
 ```bash
-npm install @h1dd3nsn1p3r/pdf-invoice
+npm install @longphung/pdf-invoice
 ```
 
 via yarn:
 
 ```bash
-yarn add @h1dd3nsn1p3r/pdf-invoice
+yarn add @longphung/pdf-invoice
 ```
 
 via pnpm:
 
 ```bash
-pnpm add @h1dd3nsn1p3r/pdf-invoice
+pnpm add @longphung/pdf-invoice
 ```
 
 ## Use

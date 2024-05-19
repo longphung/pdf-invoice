@@ -93,6 +93,7 @@ export class PDFInvoice implements SimplePDFInvoice {
 			});
 
 			doc.end();
+			stream.close();
 		});
 	}
 
